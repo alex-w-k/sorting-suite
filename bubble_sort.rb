@@ -10,13 +10,13 @@ end
 class BubbleSort
   def sort(collection)
     length = collection.length
-    swapped = true
-    while swapped == true
-      swapped = false
+    swapped = false
+    while swapped == false
+      swapped = true
       (length - 1).times do |swap|
         if collection[swap] > collection[swap + 1]
           collection.swap!(swap, (swap + 1))
-          swapped = true
+          swapped = false
         end
       end 
     end
