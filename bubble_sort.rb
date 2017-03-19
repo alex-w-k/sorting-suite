@@ -1,5 +1,4 @@
 to_sort = [4, 2, 0, 3, 1]
-i = 0
 
 class Array
   def swap!(a, b)
@@ -12,7 +11,7 @@ class BubbleSort
   def sort(collection)
     length = collection.length
     swapped = true
-    while swapped
+    while swapped == true
       swapped = false
       (length - 1).times do |swap|
         if collection[swap] > collection[swap + 1]
