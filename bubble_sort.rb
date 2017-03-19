@@ -9,19 +9,19 @@ class Array
 end
 
 class BubbleSort
-  def sort(sort)
-    length = sort.length
+  def sort(collection)
+    length = collection.length
     swapped = true
     while swapped
       swapped = false
       (length - 1).times do |swap|
-        if sort[swap] > sort[swap + 1]
-          sort.swap!(swap, (swap + 1))
+        if collection[swap] > collection[swap + 1]
+          collection.swap!(swap, (swap + 1))
           swapped = true
         end
       end 
     end
-    puts sort
+    puts collection
   end
 end
 
